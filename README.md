@@ -1,5 +1,12 @@
 # Roaming Ranking Report
 
+> ### Em resumo
+> **Problema:** o relatório mensal de qualidade de roaming dependia de juntar à mão 5 fontes diferentes (rankings de rede, tráfego, receita e custo, acordos comerciais), cada uma com um identificador diferente.  
+> **Solução:** pipeline em Python que lê as 5 fontes, padroniza a chave entre elas, calcula uma nota de qualidade por operadora e gera o Excel final já formatado.  
+> **Ferramentas:** Python, pandas, NumPy, xlsxwriter.  
+> **Resultado:** um único comando gera o relatório com 3 abas e o ranking de 257 operadoras, incluindo o diagnóstico das que ficaram sem dados.  
+> **Como isso ajuda um cliente:** se você monta todo mês o mesmo relatório juntando várias planilhas, esse processo pode virar um script que entrega o arquivo pronto.  
+
 Pipeline de dados em Python para geração do relatório mensal de qualidade de roaming internacional, integrando múltiplas fontes de dados operacionais e de mercado em um único Excel formatado.
 
 ---
